@@ -3,25 +3,45 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio | Razka</title>
-    <!-- Google Fonts: Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <title>Portfolio | Razka Fawwazil Hakim</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+      <div class="gradient-circle circle-1"></div>
+      <div class="gradient-circle circle-2"></div>
+      <div class="gradient-circle circle-3"></div>
+    </div>
     <!-- Navigation -->
     <nav>
       <div class="container">
-        <a href="#" class="logo">
+        <a href="#" class="logo-container">
           <img src="gambar/Screenshot 2025-09-25 205706.png" alt="Logo" class="logo" />
+          <span class="logo-text">Razka</span>
         </a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <ul class="nav-links">
-          <li><a href="#Home" class="nav-link">Home</a></li>
-          <li><a href="#About" class="nav-link">About</a></li>
-          <li><a href="#Projects" class="nav-link">Projects</a></li>
-          <li><a href="#Contact" class="nav-link">Contact</a></li>
+          <li>
+            <a href="#Home" class="nav-link"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="#About" class="nav-link"><i class="fas fa-user"></i> About</a>
+          </li>
+          <li>
+            <a href="#Projects" class="nav-link"><i class="fas fa-code"></i> Projects</a>
+          </li>
+          <li>
+            <a href="#Contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -31,26 +51,50 @@
       <div class="container">
         <div class="hero-content">
           <div class="hero-text fade-up">
-            <h1>Hello, I'm Razka Fawwazil Hakim</h1>
-            <p>I am a Full-Stack Developer and a Computer Science undergraduate student at Bina Nusantara University.</p>
+            <div class="greeting">
+              <span class="wave">👋</span>
+              <span class="greeting-text">Hi, I'm</span>
+            </div>
+            <h1 class="name-title">
+              <span class="gradient-text">Razka Fawwazil Hakim</span>
+            </h1>
+            <h2 class="subtitle">
+              <span class="typing-text"></span>
+              <span class="cursor">|</span>
+            </h2>
+            <p class="hero-description">Computer Science student at Bina Nusantara University, specializing in Full-Stack Development and Software Engineering.</p>
+            <div class="hero-buttons">
+              <a href="#Contact" class="btn btn-primary"> <i class="fas fa-envelope"></i> Get In Touch </a>
+              <a href="assets/files/Razka_CV.pdf" download class="btn btn-secondary"> <i class="fas fa-download"></i> Download CV </a>
+            </div>
             <div class="social-links">
-              <a href="https://github.com/RazkaFawwazil23" target="_blank" class="social-link" title="GitHub">
-                <img src="gambar/github.png" alt="GitHub" class="social-link" />
+              <a href="https://github.com/RazkaFawwazil23" target="_blank" class="social-link" title="GitHub" data-tooltip="GitHub">
+                <i class="fab fa-github"></i>
               </a>
-              <a href="https://www.instagram.com/razkafawwazz?igsh=MW5jODVmaXZzcHd6bw%3D%3D&utm_source=qr " target="_blank" class="social-link" title="Instagram">
-                <img src="gambar/instagram.png" alt="Instagram" class="social-link" />
+              <a href="https://www.instagram.com/razkafawwazz?igsh=MW5jODVmaXZzcHd6bw%3D%3D&utm_source=qr" target="_blank" class="social-link" title="Instagram" data-tooltip="Instagram">
+                <i class="fab fa-instagram"></i>
               </a>
-              <a href="https://www.linkedin.com/in/razkafawwazil/" target="_blank" class="social-link" title="LinkedIn">
-                <img src="gambar/linkedin.png" alt="LinkedIn" class="social-link" />
+              <a href="https://www.linkedin.com/in/razkafawwazil/" target="_blank" class="social-link" title="LinkedIn" data-tooltip="LinkedIn">
+                <i class="fab fa-linkedin"></i>
               </a>
-              </a>
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=razkahakim@gmail.com" class="social-link" title="Gmail">
-                <img src="gambar/gmail.png" alt="Gmail" class="social-link" />
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=razkahakim@gmail.com" class="social-link" title="Gmail" data-tooltip="Gmail">
+                <i class="fas fa-envelope"></i>
               </a>
             </div>
           </div>
           <div class="hero-image fade-up">
-            <img src="gambar/foto.png" alt="Razka Fawwazil Hakim" class="profile-img" />
+            <div class="image-wrapper">
+              <div class="glow-effect"></div>
+              <img src="gambar/foto.png" alt="Razka Fawwazil Hakim" class="profile-img" />
+              <div class="floating-card card-1">
+                <i class="fas fa-code"></i>
+                <span>Full-Stack Dev</span>
+              </div>
+              <div class="floating-card card-2">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Student</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -59,38 +103,70 @@
     <!-- About Section -->
     <section id="About">
       <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-number">01.</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="title-line"></div>
+        </div>
         <div class="about-content">
           <div class="about-text fade-up">
-            <h2 class="section-title">About Me</h2>
-            <p>
-              I am a Computer Science student at Bina Nusantara University majoring in Software Engineering. With skills in HTML, CSS, JavaScript, and full-stack development, I enjoy building user-friendly web applications and solving
-              real-world problems through technology. I am an active member of Bina Nusantara Computer Club (BNCC), where I enhance my technical expertise and collaborate with like-minded peers. Currently, I am seeking an internship to
-              apply my knowledge, contribute in a team, and gain valuable industry experience.
+            <p class="about-description">
+              I am a passionate <span class="highlight">Computer Science student</span> at Bina Nusantara University, majoring in <span class="highlight">Software Engineering</span>. My journey in tech is driven by curiosity and a desire to
+              create meaningful digital experiences.
             </p>
-            <div class="skills-list kotak fade-up">
-              <a class="skill-tag">
-                <img src="gambar/html.png" alt="HTML" class="skill-icon" />
-              </a>
-              <span class="skill-tag">
-                <img src="gambar/css-3.png" alt="CSS" class="skill-icon" />
-              </span>
-              <span class="skill-tag">
-                <img src="gambar/java-script.png" alt="JavaScript" class="skill-icon" />
-              </span>
-              <span class="skill-tag">
-                <img src="gambar/nodejs.png" alt="nodejs" class="skill-icon" />
-              </span>
-              <span class="skill-tag">
-                <img src="gambar/react.png" alt="React" class="skill-icon" />
-              </span>
-              <span class="skill-tag">
-                <img src="gambar/python.png" alt="Python" class="skill-icon" />
-              </span>
+            <p class="about-description">
+              With proficiency in modern web technologies, I specialize in building responsive, user-friendly applications that solve real-world problems. As an active member of
+              <span class="highlight">Bina Nusantara Computer Club (BNCC)</span>, I continuously enhance my skills through collaboration and hands-on projects.
+            </p>
+            <p class="about-description">Currently seeking an internship opportunity to apply my knowledge in a professional setting, contribute to innovative projects, and grow alongside experienced developers.</p>
+
+            <div class="tech-stack">
+              <h3 class="tech-title">Technologies I work with:</h3>
+              <div class="skills-grid">
+                <div class="skill-item" data-skill="HTML">
+                  <img src="gambar/html.png" alt="HTML" class="skill-icon" />
+                  <span>HTML5</span>
+                </div>
+                <div class="skill-item" data-skill="CSS">
+                  <img src="gambar/css-3.png" alt="CSS" class="skill-icon" />
+                  <span>CSS3</span>
+                </div>
+                <div class="skill-item" data-skill="JavaScript">
+                  <img src="gambar/java-script.png" alt="JavaScript" class="skill-icon" />
+                  <span>JavaScript</span>
+                </div>
+                <div class="skill-item" data-skill="Node.js">
+                  <img src="gambar/nodejs.png" alt="Node.js" class="skill-icon" />
+                  <span>Node.js</span>
+                </div>
+                <div class="skill-item" data-skill="React">
+                  <img src="gambar/react.png" alt="React" class="skill-icon" />
+                  <span>React</span>
+                </div>
+                <div class="skill-item" data-skill="Python">
+                  <img src="gambar/python.png" alt="Python" class="skill-icon" />
+                  <span>Python</span>
+                </div>
+              </div>
             </div>
-            <a href="assets/files/Razka_CV.pdf" download class="btn"> <i class="fas fa-download"></i> Download CV </a>
           </div>
           <div class="about-image fade-up">
-            <img src="gambar/foto.png" alt="About Razka" class="profile-img" />
+            <div class="about-img-wrapper">
+              <div class="image-border"></div>
+              <img src="gambar/foto.png" alt="About Razka" class="about-profile-img" />
+            </div>
+            <div class="stats-container">
+              <div class="stat-card">
+                <i class="fas fa-code"></i>
+                <h3 class="stat-number" data-count="10">0</h3>
+                <p>Projects</p>
+              </div>
+              <div class="stat-card">
+                <i class="fas fa-coffee"></i>
+                <h3 class="stat-number" data-count="500">0</h3>
+                <p>Cups of Coffee</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -99,8 +175,12 @@
     <!-- Projects Section -->
     <section id="Projects">
       <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <p class="project-intro">Here are some projects I've worked on:</p>
+        <div class="section-header fade-up">
+          <span class="section-number">02.</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="title-line"></div>
+        </div>
+        <p class="project-intro fade-up">Some of my recent work and personal projects</p>
         <div class="projects-grid">
           <!-- Project cards will be dynamically added through JavaScript -->
         </div>
@@ -110,22 +190,51 @@
     <!-- Contact Section -->
     <section id="Contact">
       <div class="container">
-        <div class="contact-content fade-up">
-          <h2 class="section-title">Contact Me</h2>
-          <p>I'm always open to discussing new projects, opportunities, or collaborations.</p>
-          <div class="social-links">
-            <a href="https://github.com/RazkaFawwazil23" target="_blank" class="social-link" title="GitHub">
-              <img src="gambar/github.png" alt="GitHub" class="social-link" />
-            </a>
-            <a href="https://www.instagram.com/razkafawwazz?igsh=MW5jODVmaXZzcHd6bw%3D%3D&utm_source=qr " target="_blank" class="social-link" title="Instagram">
-              <img src="gambar/instagram.png" alt="Instagram" class="social-link" />
-            </a>
-            <a href="https://www.linkedin.com/in/razkafawwazil/" target="_blank" class="social-link" title="LinkedIn">
-              <img src="gambar/linkedin.png" alt="LinkedIn" class="social-link" />
-            </a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=razkahakim@gmail.com" target="_blank" class="social-link" title="LinkedIn">
-              <img src="gambar/gmail.png" alt="Gmail" class="social-link" />
-            </a>
+        <div class="contact-wrapper fade-up">
+          <div class="section-header">
+            <span class="section-number">03.</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="title-line"></div>
+          </div>
+          <div class="contact-content">
+            <p class="contact-description">I'm currently looking for new opportunities and my inbox is always open. Whether you have a question, want to collaborate, or just want to say hi, I'll do my best to get back to you!</p>
+            <div class="contact-methods">
+              <a href="mailto:razkahakim@gmail.com" class="contact-card">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email</h3>
+                <p>razkahakim@gmail.com</p>
+              </a>
+              <a href="https://www.linkedin.com/in/razkafawwazil/" target="_blank" class="contact-card">
+                <div class="contact-icon">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <h3>LinkedIn</h3>
+                <p>Connect with me</p>
+              </a>
+              <a href="https://github.com/RazkaFawwazil23" target="_blank" class="contact-card">
+                <div class="contact-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <h3>GitHub</h3>
+                <p>Check my repos</p>
+              </a>
+            </div>
+            <div class="social-links-footer">
+              <a href="https://github.com/RazkaFawwazil23" target="_blank" class="social-link-footer" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.instagram.com/razkafawwazz?igsh=MW5jODVmaXZzcHd6bw%3D%3D&utm_source=qr" target="_blank" class="social-link-footer" title="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/razkafawwazil/" target="_blank" class="social-link-footer" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=razkahakim@gmail.com" target="_blank" class="social-link-footer" title="Gmail">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -134,7 +243,13 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-        <p>&copy; 2023 Razka Fawwazil Hakim. All rights reserved.</p>
+        <div class="footer-content">
+          <p>Designed & Built by <span class="highlight">Razka Fawwazil Hakim</span></p>
+          <p class="copyright">&copy; 2025 All rights reserved.</p>
+        </div>
+        <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
+          <i class="fas fa-arrow-up"></i>
+        </button>
       </div>
     </footer>
 
