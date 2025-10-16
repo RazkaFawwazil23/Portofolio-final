@@ -706,6 +706,7 @@ nav .container {
   gap: 1.2rem;
   max-width: 380px;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 .stat-card {
