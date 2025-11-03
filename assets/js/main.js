@@ -30,6 +30,16 @@ const projects = [
       github: "https://github.com/RazkaFawwazil23/TicTacProjectReact",
     },
   },
+  {
+    title: "To-Do-List App",
+    description: "A simple and intuitive to-do list application built with React + Next.js, allowing users to manage their tasks efficiently.",
+    image: "gambar/todolist.png",
+    tags: ["Next.Js", "CSS", "React", "Typescript", "Node.Js", "Npm"],
+    links: {
+      demo: "https://to-do-list-project-nu-rose.vercel.app/",
+      github: "https://github.com/RazkaFawwazil23/ToDoList-Project",
+    },
+  },
 ];
 
 // Typing animation for subtitle
